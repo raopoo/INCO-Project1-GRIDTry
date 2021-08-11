@@ -1,0 +1,159 @@
+/* Grid for all 3 pages */
+.grid-index{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 5fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: "nav"
+                        "logo"
+                        "main-index"
+                        "footer";
+
+}
+.grid-about{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 5fr 5fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: "nav nav"
+                        "logo logo"
+                        "text1 pic1"
+                        "pic2 text2"
+                        "footer footer";
+
+}
+.grid-contact{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 5fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: "nav"
+                        "logo"
+                        "main-contact"
+                        "footer";
+
+}
+/* Nav, main logo and footer */
+.nav{
+    background-color: rgb(106,123,139);
+    grid-area: nav;
+    padding: 1rem;
+    display: flex; 
+    justify-content: space-between;
+}
+.nav img{
+    width: 10rem;  
+    float:left;
+    padding-left: 2rem;
+    padding-top: 0.1rem;
+    }
+.nav ul li{
+  display: inline; 
+  font-size: 1.2rem;
+  margin: 4rem 2rem;
+}
+.nav ul li a{
+    color: white;
+    padding: 1rem 1rem;
+    
+}
+.logo{
+grid-area: logo;
+text-align: center;
+}
+.logo img{
+    width: 10rem;
+}
+
+.footer{
+    background-color: rgb(106,123,139);
+    color: white;
+    /* clear:both;
+    overflow:auto; */
+    grid-area: footer;
+    text-align: center;
+}
+.footer .footer-logo{
+    width: 3rem;
+    /* height: 5rem; */
+    float:left;
+    padding-left: 3rem;
+    padding-top: 2rem;
+} 
+.footer p{
+    /* text-align: center; */
+    font-size:large;
+}
+.footer .mediaLogo{
+    text-align: center;
+    /* justify-content: center; */
+}
+.footer .mediaLogo img{
+    width: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+/* Css for about page */
+.text1{
+/* background-color:rgb(189, 122, 35); */
+    grid-area: text1;
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align:left;
+    padding: 5rem 2rem;
+    margin: 7rem 4rem;
+}
+.text2{
+    /* background-color:rgb(42, 170, 38); */
+    grid-area: text2;
+    color: gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align:left;
+    padding: 4rem;
+    margin: 1rem;
+}
+.pic1 img{
+    /* background-color:rgb(113, 89, 250); */
+    width: 40rem;
+    height: 50rem;
+    padding: 4rem;
+    margin: 1rem;
+    grid-area: pic1;
+}
+.pic2 img{
+/* background-color:rgb(150, 26, 102); */
+    width: 40rem;
+    height: 45rem;
+    padding: 0.5rem 2rem;
+    margin: 0.2rem 4rem;
+}
+/* CSS for contact page */
+.main-contact{
+    grid-area: main-contact;
+    text-align: center;
+    padding:0 2rem;
+    margin:0 20rem;
+    color: gray;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.main-contact p{
+    text-align: left;
+    padding: 2rem;
+    margin: 2rem;
+}
+.main-contact img{
+     height: 50rem;
+    width: 60rem;
+    padding: 5rem;
+    margin: 2rem;
+}
+/* CSS for index file */
+.main-index{
+    grid-area: main-index;
+}
