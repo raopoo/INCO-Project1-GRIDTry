@@ -98,7 +98,6 @@ text-align: center;
 }
 /* Css for about page */
 .text1{
-/* background-color:rgb(189, 122, 35); */
     grid-area: text1;
     color: gray;
     font-size: 1.6rem;
