@@ -193,19 +193,23 @@ text-align: center;
     text-align: center;
 }
 .cafePic{
+    position: relative;
    text-align: center;
-   width: 100rem;
+   width: 70%;
    height: 60rem;
 }
  .cafeName{
   color: var(--tcolor1);
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 50%;
+  /* left: 30%; */
+  transform: translateY(-50%);
   font-size: 3rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  padding: 0 2rem;
  }
 
  .txtBfrCard{
@@ -218,8 +222,9 @@ text-align: center;
 }
 .threeCards{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     margin: 2rem;
+    /* flex-wrap: wrap; */
     
 }
 .threeCards .card{
@@ -231,9 +236,11 @@ text-align: center;
     margin: 2rem;
     padding: 2rem;
     text-align: center;
+    width: 30%;
 }
 .threeCards .card img{
-    width: 30%;
+    width: 100px;
+    margin-bottom: 15px;
 }
 .threeCards .card p{
     padding: 1rem;
@@ -300,4 +307,22 @@ text-align: center;
 .moreInfo p{
     padding: 2rem;
     margin: 2rem;
+}
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 0.875rem;
+    }
+    .threeCards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-bottom: 25px;
+        width: 60%;
+        padding: 40px;
+    }
+}
+@media screen (max-width: 400px){
+    
 }
